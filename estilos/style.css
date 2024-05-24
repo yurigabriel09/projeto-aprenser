@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+:root {
+    --darkcolor: #000000ce;
+    --lightcolor: #ffd900;
+    --titlecardscolor: #0e111f;
+    --aboutbgcolor: #003463;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+/* CONFIGURAÇÕES - CABEÇALHO DA PÁGINA */
+
+header {
+    background-color: var(--darkcolor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5em;
+}
+
+nav ul {
+    margin-left: 2em;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--lightcolor);
+    border: .5px solid;
+    padding: .8em;
+    transition: all .4s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--lightcolor);
+    color: var(--darkcolor);
+}
+
+/* CONFIGURAÇÕES - CONTEÚDO DO TOPO */
+
+.top-content {
+    background-image: linear-gradient(to top, yellow, white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em 0 0 2em;
+}
+
+.top-content img {
+    max-width: 600px;
+}
+
+.saiba-mais h1 {
+    font-size: 2.5em;
+    max-width: 300px;
+    padding-bottom: .5em;
+}
+
+.saiba-mais span {
+    text-transform: uppercase;
+}
+
+.botao {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--lightcolor);
+    color: var(--darkcolor);
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.botao:hover {
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+}
+
+/* CONFIGURAÇÕES - CARDS DOS CURSOS */
+
+.card-content {
+    margin: 2em;
+    text-align: center;
+}
+
+.card-content .botao {
+    margin: 2em auto;
+}
+
+.card-content h2 {
+    padding: 1.2em;
+}
+
+.cards img {
+    width: 401px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+    text-align: left;
+}
+
+.cards div {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 8px;
+}
+
+.titulo-curso {
+    color: var(--titlecardscolor);
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: .5em;
+}
+
+.definicao-curso {
+    padding-bottom: 2em;
+}
+
+.cards p {
+    width: 350px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* CONFIGURAÇÕES - SOBRE NÓS */
+
+.about-content {
+    margin-top: 4em;
+    padding-top: 4em;
+    background-color: var(--aboutbgcolor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3em;
+    color: white;
+}
+
+.sobre-nos {
+    width: 500px;
+    font-size: 1.2em;
+    padding-bottom: 2em;
+}
+
+.sobre-nos h2 {
+    margin-bottom: 1em;
+}
+
+/* CONFIGURAÇÕES - CONTATOS */
+
+.contatos {
+    margin: auto;
+    width: 80%;
+    padding: 4em;
+    text-align: right;
+    font-size: .9em;
+    line-height: 1.4;
+}
+
+.contatos h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.contatos img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* CONFIGURAÇÕES - FOOTER */
+
+footer {
+    background-color: var(--darkcolor);
+    color: white;
+    letter-spacing: .2em;
+    font-size: .7em;
+    text-align: center;
+    padding: 2em;
+}
